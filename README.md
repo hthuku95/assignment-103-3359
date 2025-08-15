@@ -1,1 +1,140 @@
-content="# Project README\n\n## Overview\n\nThis project contains the main codebase and documentation for the current assignment or development work. The project structure and dependencies will be established based on the specific requirements and implementation details.\n\n## Project Structure\n\n```\nproject/\n├── README.md           # This file\n├── src/               # Source code directory\n├── docs/              # Documentation files\n├── tests/             # Test files\n├── config/            # Configuration files\n└── assets/            # Static assets and resources\n```\n\n## Prerequisites\n\nBefore getting started, ensure you have the following installed on your system:\n\n- **Git** - For version control\n- **Text Editor/IDE** - Such as VS Code, IntelliJ, or your preferred editor\n- **Web Browser** - For viewing documentation and web-based components\n\n## Setup Instructions\n\n1. **Clone the Repository**\n   ```bash\n   git clone [repository-url]\n   cd [project-directory]\n   ```\n\n2. **Environment Setup**\n   - Ensure all prerequisite software is installed\n   - Set up any necessary environment variables\n   - Configure your development environment\n\n3. **Initial Configuration**\n   - Review any configuration files in the `config/` directory\n   - Update settings as needed for your local environment\n   - Verify all paths and dependencies are correctly set\n\n## Getting Started\n\n1. **Explore the Project Structure**\n   - Familiarize yourself with the directory layout\n   - Review existing documentation in the `docs/` folder\n   - Check for any existing source files in `src/`\n\n2. **Development Workflow**\n   - Create feature branches for new development\n   - Follow consistent coding standards\n   - Document your changes appropriately\n\n3. **Testing**\n   - Run any existing tests before making changes\n   - Add tests for new functionality\n   - Ensure all tests pass before committing\n\n## Configuration\n\nConfiguration files and settings will be located in the `config/` directory. Common configuration items may include:\n\n- Application settings\n- Environment variables\n- Build configurations\n- Deployment settings\n\n## Usage\n\nDetailed usage instructions will be added as the project develops. Common operations may include:\n\n- Running the application\n- Building the project\n- Executing tests\n- Generating documentation\n\n## Development Guidelines\n\n- **Code Style**: Follow consistent formatting and naming conventions\n- **Documentation**: Document all functions, classes, and modules\n- **Version Control**: Make frequent, descriptive commits\n- **Testing**: Write comprehensive tests for all functionality\n\n## Troubleshooting\n\nCommon issues and solutions will be documented here as they arise. For immediate help:\n\n1. Check the documentation in the `docs/` directory\n2. Review error logs and console output\n3. Verify all dependencies are properly installed\n4. Ensure configuration files are correctly set up\n\n## Contributing\n\n1. Fork the repository\n2. Create a feature branch (`git checkout -b feature/new-feature`)\n3. Make your changes\n4. Add tests for new functionality\n5. Commit your changes (`git commit -am 'Add new feature'`)\n6. Push to the branch (`git push origin feature/new-feature`)\n7. Create a Pull Request\n\n## Resources\n\n- **Documentation**: Check the `docs/` folder for detailed documentation\n- **Examples**: Look for example files and sample configurations\n- **References**: External resources and links will be listed here\n\n## License\n\nThis project's license will be specified here once determined.\n\n## Contact\n\nFor questions, issues, or contributions, please:\n- Open an issue in the repository\n- Contact the project maintainer\n- Review existing documentation and FAQs\n\n---\n\n**Note**: This README will be updated as the project develops and more specific requirements are identified. Please check back regularly for updates and additional information." additional_kwargs={} response_metadata={'id': 'msg_01EfcuS7A8XxGRw327JaGsvP', 'model': 'claude-sonnet-4-20250514', 'stop_reason': 'end_turn', 'stop_sequence': None, 'usage': {'cache_creation_input_tokens': 0, 'cache_read_input_tokens': 0, 'input_tokens': 167, 'output_tokens': 827, 'cache_creation': {'ephemeral_5m_input_tokens': 0, 'ephemeral_1h_input_tokens': 0}, 'service_tier': 'standard'}} id='run--10dcdaf8-0116-47a2-a06d-1441784e13b0-0' usage_metadata={'input_tokens': 167, 'output_tokens': 827, 'total_tokens': 994, 'input_token_details': {'cache_read': 0, 'cache_creation': 0}}
+# Java Note Taking Application
+
+A comprehensive note-taking application built in Java that provides users with an intuitive interface for creating, organizing, and managing their notes efficiently.
+
+## Table of Contents
+
+- [Features](#features)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [API Documentation](#api-documentation)
+- [Examples](#examples)
+- [Configuration](#configuration)
+- [Troubleshooting](#troubleshooting)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Features
+
+- **Create and Edit Notes**: Write and modify notes with rich text formatting
+- **Organize with Categories**: Categorize notes for better organization
+- **Search Functionality**: Quickly find notes using keywords
+- **File Operations**: Save, load, and export notes in various formats
+- **User-Friendly Interface**: Clean and intuitive GUI built with Java Swing
+- **Auto-Save**: Automatic saving to prevent data loss
+- **Note Templates**: Pre-defined templates for different note types
+- **Backup and Restore**: Backup your notes and restore when needed
+
+## Requirements
+
+### System Requirements
+- Java Development Kit (JDK) 8 or higher
+- Minimum 512 MB RAM
+- 100 MB free disk space
+- Operating System: Windows 10+, macOS 10.12+, or Linux
+
+### Development Requirements
+- Java JDK 11+ (recommended)
+- IDE: IntelliJ IDEA, Eclipse, or VS Code
+- Maven 3.6+ (for dependency management)
+- Git (for version control)
+
+## Installation
+
+### Option 1: Download Pre-built JAR
+
+1. Download the latest release from the [Releases](https://github.com/yourusername/java-note-app/releases) page
+2. Ensure Java 8+ is installed on your system
+3. Run the application:
+   ```bash
+   java -jar note-taking-app.jar
+   ```
+
+### Option 2: Build from Source
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/java-note-app.git
+   cd java-note-app
+   ```
+
+2. **Compile the project:**
+   ```bash
+   # Using Maven
+   mvn clean compile
+
+   # Or using Gradle
+   ./gradlew build
+   ```
+
+3. **Run the application:**
+   ```bash
+   # Using Maven
+   mvn exec:java -Dexec.mainClass="com.noteapp.Main"
+
+   # Or directly with Java
+   java -cp target/classes com.noteapp.Main
+   ```
+
+### Option 3: IDE Setup
+
+1. Import the project into your preferred IDE
+2. Ensure the JDK is properly configured
+3. Build and run the `Main.java` class
+
+## Usage
+
+### Starting the Application
+
+Launch the application using one of the installation methods above. The main window will appear with the following components:
+
+- **Menu Bar**: File operations, preferences, and help
+- **Toolbar**: Quick access to common functions
+- **Note List Panel**: Displays all created notes
+- **Editor Panel**: Main area for writing and editing notes
+- **Category Panel**: Organize notes by categories
+
+### Basic Operations
+
+#### Creating a New Note
+
+1. Click the "New Note" button or press `Ctrl+N`
+2. Enter a title for your note
+3. Start typing in the editor area
+4. The note is automatically saved as you type
+
+#### Editing an Existing Note
+
+1. Select a note from the note list
+2. Click on the editor area to start editing
+3. Make your changes
+4. Changes are saved automatically
+
+#### Organizing Notes
+
+1. **Create Categories:**
+   - Right-click in the category panel
+   - Select "New Category"
+   - Enter a category name
+
+2. **Assign Notes to Categories:**
+   - Drag and drop notes into categories
+   - Or right-click a note and select "Move to Category"
+
+#### Searching Notes
+
+1. Use the search bar at the top of the application
+2. Enter keywords or phrases
+3. Results will be filtered in real-time
+4. Use advanced search options for more specific queries
+
+### Keyboard Shortcuts
+
+| Shortcut | Action |
+|----------|--------|
+| `Ctrl+N` | New Note |
+| `Ctrl+S` | Save Note |
+| `Ctrl+O` | Open Note |
+|
